@@ -1,7 +1,10 @@
 class ArtistsController < ApplicationController
   def index
-  end
+    @artists = Artist.all
+    render json: @artists
+end
 
-  def show
-  end
+def show
+  @artist = Artist.find(params[:id])
+end
 end
