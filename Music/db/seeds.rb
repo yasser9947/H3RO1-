@@ -7,6 +7,7 @@ skepta = Artist.create(name: "Skepta")
 
 
 
+Album.destroy_all
 
 KONVITED = Album.create(name: "KONVITED", image: "https://upload.wikimedia.org/wikipedia/en/8/85/AKonvicted.jpg", artist_id: akon.id, release:2007)
 BACK = Album.create(name: "BACK TO BACK", image: "https://www.buymixtapes.com/upload/members/images/backtoback.jpg", artist_id: drake.id, release:2007)
