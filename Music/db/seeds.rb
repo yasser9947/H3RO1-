@@ -1,3 +1,4 @@
+
 akon = Artist.create(name: "Akon")
 drake = Artist.create(name: "Drake")
 big = Artist.create(name: "Big Shaq")
@@ -15,6 +16,7 @@ KONNICHIWA = Album.create(name: "KONNICHIWA", image: "https://upload.wikimedia.o
 
 
 
+Song.destroy_all
 
 
 Song.create(name: "BACK TO BACK", url:"http://naijaplayhiphop.com/wp-content/uploads/music/Drake-Back-To-Back-Freestyle_NaijaPlayhiphop.com_.mp3", album_id:BACK.id)
@@ -22,3 +24,5 @@ Song.create(name: "HOTLINE", url:"http://lokcitymusic.com.ng/wp-content/uploads/
 Song.create(name: "Mans Not Hot", url:"https://naijaextra.com/wp-content/uploads/2018/01/Big-Shaq-Mans-Not-Hot.mp3", album_id:MANS.id)
 Song.create(name: "BAD ENERGY", url:"https://www.360nobs.com/wp-content/uploads/2018/06/Bad-Energy-Stay-Far-Away.mp3", album_id:KONNICHIWA.id)
 Song.create(name: "NWA", url:"http://naijaloaded.store/wp-content/uploads/2018/06/Phyno-Ft.-Wale-%E2%80%93-N.W.A.mp3", album_id:NO.id)
+
+
