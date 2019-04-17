@@ -1,7 +1,9 @@
 class AlbumController < ApplicationController
   def index
+ dev
       @albums = Album.all
       render json: @albums
+
   end
 
   def show

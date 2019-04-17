@@ -1,2 +1,36 @@
-<h1>Songs#index</h1>
-<p>Find me in app/views/songs/index.html.erb</p>
+<ul class="nav navbar-dark bg-dark ">
+  <li class="nav-item">
+    <a class="nav-link active" href="#">Artist</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Album</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Songs</a>
+  </li>
+ 
+</ul>
+  <table class="table carrrrrr">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Player</th>
+            <th scope="col">Albom cover</th>
+            <th scope="col">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <% @songs.each do|song| %>
+  
+            <th scope="row"><%= song.name%></th>
+            <td><audio controls>
+            
+  <source src= <%=song.url%> type="audio/ogg"></audio></td>
+            <td><%=song.album_id%></td>
+            <td>non</td>
+          </tr>
+          
+<% end %>
+        
+   
