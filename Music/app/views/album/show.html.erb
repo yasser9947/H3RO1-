@@ -1,6 +1,20 @@
- <div class="card" style="width: 18rem;">
-        <img src="https://i.ytimg.com/vi/JXlkrRe_4b0/maxresdefault.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
-      </div>
+<div class ="Artis22" >
+<h1> Artist name:  <%=  @album.name %> </h1>
+ 
+
+<table class="table">
+
+  <tbody>
+    <tr>
+      <th scope="row">Cover Image</th>
+      <td>Year </td>
+      <td>Name</td>
+    </tr>
+    <tr>
+      <th scope="row"><img class = "imageee" src=<%=  @album.image %> alt=""></th>
+      <td> <%= @album.release %> </td>
+      <td><%= @album.name %></td>
+    </tr>
+   
+  </tbody>
+</table>

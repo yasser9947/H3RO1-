@@ -5,8 +5,10 @@ Rails.application.routes.draw do
 root 'artists#index'
 # root 'albums#index'
 
+#  get 'albums/index'
+
 resources :artists
-resources :albums
+resources :album
 resources :songs
 
 end

@@ -1,2 +1,15 @@
-<h1>Album#index</h1>
-<p>Find me in app/views/album/index.html.erb</p>
+
+<div class = "albom">
+    
+ <% @albums.each do |album| %>
+
+<div class="card alboms" style="width: 18rem;">
+        <img src=<%=album.image %> class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text"> <%= link_to album.name , album_path(album) %></p>
+        </div>
+
+      </div>
+           <%end%>
+
+      </div>
