@@ -1,5 +1,5 @@
 <div class ="Artis22" >
-<h1> Artis name:  <%=  @albom.name %> </h1>
+<h1> Artist name:  <%=  @album.name %> </h1>
  
 
 <table class="table">
@@ -7,13 +7,13 @@
   <tbody>
     <tr>
       <th scope="row">Cover Image</th>
-      <td>Year</td>
+      <td>Year </td>
       <td>Name</td>
     </tr>
     <tr>
-      <th scope="row"><img class = "imageee" src=<%=  @albom.image %> alt=""></th>
-      <td></td>
-      <td>Thornton</td>
+      <th scope="row"><img class = "imageee" src=<%=  @album.image %> alt=""></th>
+      <td> <%= @album.release %> </td>
+      <td><%= @album.name %></td>
     </tr>
    
   </tbody>
